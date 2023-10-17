@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "pingICP_backend": {
+      "candid": "src/pingICP_backend/pingICP_backend.did",
+      "package": "pingICP_backend",
+      "type": "rust"
+    },
+    "pingICP_frontend": {
+      "dependencies": [
+        "pingICP_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/pingICP_frontend/src/index.html"
+      },
+      "source": [
+        "src/pingICP_frontend/assets",
+        "dist/pingICP_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
