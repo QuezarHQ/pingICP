@@ -1,3 +1,15 @@
 service : {
     "greet": (text) -> (text) query;
+    "is_publisher": (text) -> (bool) query;
+    "add_publisher": (text, text, text) -> ();
+    "remove_publisher": (text) -> ();
+    "get_publishers": () -> (text) query;
+    "get_publisher": (text) -> (text) query;
+    "is_subscriber": (text) -> (bool) query;
+    "add_subscriber": (text, text) -> ();
+    "remove_subscriber": (text) -> ();
+    "get_subscribers": () -> (text) query;
+    "get_subscriber": (text) -> (text) query;
+    "subscribe": (text, text) -> ();
+    "publish": (text, text) -> ();
 }
