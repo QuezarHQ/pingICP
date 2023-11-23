@@ -1,4 +1,6 @@
-node_modules/
-.dfx/
-target/
-dist/
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+.dfx
