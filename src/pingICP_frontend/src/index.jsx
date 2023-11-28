@@ -14,7 +14,7 @@ const MyHello = () => {
 
   return (
     <div>
-      <p className="text-3xl border border-black">Hi, this is the frontend canister</p>
+      <p className="text-3xl bg-primary">Hi, this is the frontend canister</p>
     </div>
   );
 };
