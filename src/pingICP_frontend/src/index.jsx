@@ -1,5 +1,6 @@
 import * as React from "react";
 import { render } from "react-dom";
+import "./index.css"
 import { pingICP_backend } from "../../declarations/pingICP_backend";
 
 const MyHello = () => {
@@ -13,7 +14,7 @@ const MyHello = () => {
 
   return (
     <div>
-      <p>Hi, this is the frontend canister</p>
+      <p className="text-3xl border border-black">Hi, this is the frontend canister</p>
     </div>
   );
 };
