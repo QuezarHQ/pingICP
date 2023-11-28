@@ -22,8 +22,8 @@ const Header = () => {
             <Link to="/publisher">Dapp</Link>
           </li>
           <li>
-            {/* <ConnectButton />
-            <ConnectDialog /> */}
+            <ConnectButton />
+            <ConnectDialog />
           </li>
         </ul>
       </div>
