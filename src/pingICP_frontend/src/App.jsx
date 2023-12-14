@@ -12,8 +12,8 @@ import "./connect2ic.css"
  * Import canister definitions like this:
  */
 // import * as pingICP_backend from "../.dfx/local/canisters/pingICP_backend"
-import * as pingICP_backend from "../../../.dfx/local/canisters/pingICP_backend"
-// import { pingICP_backend } from "../../declarations/pingICP_backend"
+// import * as pingICP_backend from "../../../.dfx/local/canisters/pingICP_backend"
+import * as pingICP_backend from "../../declarations/pingICP_backend"
 
 
 import Header from "./components/Header"
@@ -57,7 +57,7 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home principal={principal}/>} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signup" element={<SignUp principal={principal}/>} />
         <Route path="/subscriber" element={<Subscriber />} />
         <Route path="/publisher" element={<Publisher />} />
       </Routes>
