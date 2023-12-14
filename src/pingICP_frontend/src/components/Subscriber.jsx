@@ -30,6 +30,10 @@ const Subscriber = ({ principal }) => {
     await updateDetails();
   };
 
+  if (subscriber.id == null) {
+    updateDetails();
+  }
+
   return (
     <div className="w-screen flex flex-col items-center p-10">
       <div className="card w-full bg-neutral text-neutral-content">
@@ -38,9 +42,9 @@ const Subscriber = ({ principal }) => {
           <br />
           <p>ID: {subscriber.id} </p>
           <p>Name: {subscriber.name} </p>
-          <button className="btn" onClick={updateDetails}>
+          {/* <button className="btn" onClick={updateDetails}>
             Refresh details
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="w-full flex flex-row">

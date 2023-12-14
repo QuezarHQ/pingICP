@@ -28,6 +28,10 @@ const Publisher = ({ principal }) => {
     await updateDetails();
   };
 
+  if (publisher.id == null) {
+    updateDetails();
+  }
+
   return (
     <div className=" flex flex-col items-center p-10">
       <div className="card w-full bg-neutral text-neutral-content">
@@ -37,9 +41,9 @@ const Publisher = ({ principal }) => {
           <p>ID: {publisher.id} </p>
           <p>Name: {publisher.name} </p>
           <p>Description: {publisher.description} </p>
-          <button className="btn" onClick={updateDetails}>
+          {/* <button className="btn" onClick={updateDetails}>
             Refresh
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="w-full flex flex-row">
