@@ -88,7 +88,8 @@ const Subscriber = ({ principal }) => {
             <p className="font-bold">Messages: </p>
             <br />
             <ul>
-            {subscriber?.messages &&
+            {subscriber?.messages?.length == 0 && <p>You don't have any messages yet. Try subscribing to a dapp, and then wait for them to post an update!</p>}  
+            {subscriber?.messages?.length > 0 &&
               subscriber?.messages.map((message) => {
                 console.log(message);
                 return (

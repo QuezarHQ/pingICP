@@ -1,5 +1,5 @@
 import React from "react"
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, useNavigate } from "react-router-dom"
 /*
  * Connect2ic provides essential utilities for IC app development
  */
@@ -28,6 +28,8 @@ import Subscriber from "./components/Subscriber"
 
 function App() {
 
+  const navigate = useNavigate();
+
   const {
     principal,
     connect,
@@ -45,6 +47,7 @@ function App() {
     },
     onDisconnect: () => {
       console.log("signed out")
+      navigate("/")
     }
   })
 

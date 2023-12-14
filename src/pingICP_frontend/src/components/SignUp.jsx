@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+
 
 import { pingICP_backend } from "../../../declarations/pingICP_backend"
 
@@ -7,6 +9,8 @@ import { pingICP_backend } from "../../../declarations/pingICP_backend"
 const SignUp = ({ principal }) => {
 
   console.log(principal)
+
+  const navigate = useNavigate();
 
   const [isPublisher, setIsPublisher] = useState(true)
   const [name, setName] = useState("")
@@ -28,13 +32,16 @@ const SignUp = ({ principal }) => {
     console.log("submitting")
     if (isPublisher) {
       await pingICP_backend.add_publisher(principal, name, bio)
+      navigate("/publisher");
     } else {
       await pingICP_backend.add_subscriber(principal, name)
+      navigate("/subscriber");
     }
     const publishers = await pingICP_backend.get_publishers()
     console.log(publishers)
     const subscribers = await pingICP_backend.get_subscribers()
     console.log(subscribers)
+    
   }
 
   return (
