@@ -58,8 +58,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home principal={principal}/>} />
         <Route path="/signup" element={<SignUp principal={principal}/>} />
-        <Route path="/subscriber" element={<Subscriber />} />
-        <Route path="/publisher" element={<Publisher />} />
+        <Route path="/subscriber" element={<Subscriber principal={principal} />} />
+        <Route path="/publisher" element={<Publisher principal={principal} />} />
       </Routes>
       
       <Footer />
