@@ -38,9 +38,9 @@ const Publisher = ({ principal }) => {
         <div className="card-body">
           <h2 className="card-title">Dapp details</h2>
           <br />
-          <p>ID: {publisher.id} </p>
-          <p>Name: {publisher.name} </p>
-          <p>Description: {publisher.description} </p>
+          <p>ID: {publisher?.id} </p>
+          <p>Name: {publisher?.name} </p>
+          <p>Description: {publisher?.description} </p>
           {/* <button className="btn" onClick={updateDetails}>
             Refresh
           </button> */}

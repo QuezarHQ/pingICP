@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       
-      <Header />
+      <Header principal={principal} />
       
       <Routes>
         <Route path="/" element={<Home principal={principal}/>} />

@@ -40,8 +40,8 @@ const Subscriber = ({ principal }) => {
         <div className="card-body">
           <h2 className="card-title">User details</h2>
           <br />
-          <p>ID: {subscriber.id} </p>
-          <p>Name: {subscriber.name} </p>
+          <p>ID: {subscriber?.id} </p>
+          <p>Name: {subscriber?.name} </p>
           {/* <button className="btn" onClick={updateDetails}>
             Refresh details
           </button> */}
@@ -88,13 +88,19 @@ const Subscriber = ({ principal }) => {
             <p className="font-bold">Messages: </p>
             <br />
             <ul>
-            {subscriber.messages &&
+            {subscriber?.messages &&
               subscriber?.messages.map((message) => {
                 console.log(message);
                 return (
                   <div className="card w-full bg-neutral text-neutral-content m-2">
                     <div className="card-body">
-                      <p className="text-lg font-bold text-primary">From { message.publisher }</p>
+                      <p className="text-lg font-bold text-primary">From { publishers.map((publisher) => {
+                        if (publisher.id == message.publisher) {
+                          return (
+                            <span>{publisher.name}</span>
+                          )
+                        }
+                      }) }</p>
                       <p>{ message.content }</p>
                     </div>
                   </div>
