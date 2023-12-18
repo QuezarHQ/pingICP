@@ -22,6 +22,13 @@ A dapp user can:
 Do check it out the live version deployed [here](https://h7jna-pqaaa-aaaak-afgiq-cai.icp0.io/)! You'll need to have a wallet supporting the ICP network, (eg BitFinity) to connect to the application.
 
 
-### NOTE
+#### NOTE
 
 The application is in prototype stage. Further enhancements coming soon...
+
+
+## Application Architecture
+
+The application is divided into two canisters
+- **backend**: hosts the core application logic written in Rust. The code can be found under `/src/pingICP_backend`
+- **asset/frontend**: hosts the UI components of the application written using React framework. The code can be found under `/src/pingICP_frontend`
