@@ -26,6 +26,7 @@ Do check it out the live version deployed [here](https://h7jna-pqaaa-aaaak-afgiq
 
 The application is in prototype stage. Further enhancements coming soon...
 
+<br>
 
 ## Application Architecture
 
@@ -33,10 +34,13 @@ The application is divided into two canisters:
 - **backend**: hosts the core application logic written in Rust. The code can be found under `/src/pingICP_backend`
 - **asset/frontend**: hosts the UI components of the application written using React framework. The code can be found under `/src/pingICP_frontend`
 
+<br>
+
 ## Getting started
 
 You can check out this [demo video](https://www.loom.com/share/586d9b2cfe8a453bb0ae698fbc01f64a?sid=b1978f10-85b0-4629-9a0a-c01f234ad32d) to get a better understanding of how Ping works.
 
+<br>
 
 ## Roadmap
 
@@ -45,6 +49,7 @@ You can check out this [demo video](https://www.loom.com/share/586d9b2cfe8a453bb
 - [ ] Add support for notifications from realtime blockchain activities
 - [ ] Mobile support
 
+<br>
 
 ## Build and run it locally
 
