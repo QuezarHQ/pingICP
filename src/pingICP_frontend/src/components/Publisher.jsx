@@ -41,9 +41,6 @@ const Publisher = ({ principal }) => {
           <p>ID: {publisher?.id} </p>
           <p>Name: {publisher?.name} </p>
           <p>Description: {publisher?.description} </p>
-          {/* <button className="btn" onClick={updateDetails}>
-            Refresh
-          </button> */}
         </div>
       </div>
       <div className="w-full flex flex-row">
@@ -52,18 +49,6 @@ const Publisher = ({ principal }) => {
             <p className="font-bold">Post an update:</p>
             <br />
             <ul>
-              {/* {publishers.length > 0 && publishers.map((publisher) => {
-                console.log(publisher)
-                return (
-                  <li>
-                    <div className="border p-2">
-                      <p>Name: {publisher.name}</p>
-                      <p>Description: {publisher.description}</p>
-                      <button value={publisher.id} onClick={subscribe}>Subscribe</button>
-                    </div>
-                  </li>
-                )
-              })} */}
               <div className="card w-full bg-neutral text-neutral-content">
                 <div className="card-body">
                   <textarea
@@ -106,28 +91,6 @@ const Publisher = ({ principal }) => {
           </div>
         </div>
       </div>
-      {/* <div>
-          <h1>Publisher details</h1>
-          <button onClick={updateDetails}>Update details</button>
-          <p>Name: {publisher?.name}</p>
-          <p>Address: {publisher?.id}</p>
-          <p>Description: {publisher?.description}</p>
-        </div>
-        <div>
-          <input type="text" placeholder="enter message" onChange={updateMessage}/>
-          <br />
-          <button onClick={sendMessage}>Send Message</button>
-        </div>
-        <div>
-          {publisher.messages && publisher?.messages.map((message) => {
-            {console.log(message)}
-            return (
-              <div className="border p-2">
-                <p>{message.content}</p>
-              </div>
-            )
-          })}
-        </div> */}
     </div>
   );
 };

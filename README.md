@@ -1,4 +1,4 @@
-# pingICP
+# Ping (for ICP)
 
 
 ## Application Overview

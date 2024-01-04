@@ -42,9 +42,6 @@ const Subscriber = ({ principal }) => {
           <br />
           <p>ID: {subscriber?.id} </p>
           <p>Name: {subscriber?.name} </p>
-          {/* <button className="btn" onClick={updateDetails}>
-            Refresh details
-          </button> */}
         </div>
       </div>
       <div className="w-full flex flex-row">
